@@ -1,2 +1,2 @@
-Бот запускается в режиме 'detached' с помощью команды:
-    docker compose up -d
+Бот запускается в detached-режиме с помощью команды:  
+    ```docker compose up -d```
