@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "fdgwarehouse-bot"
+version = "0.5.0"
+description = "FDG Warehouse Bot"
+authors = ["evgx_81 <evgx81@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+google-auth = "^2.29.0"
+gspread = "^6.0.2"
+pytelegrambotapi = "^4.16.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

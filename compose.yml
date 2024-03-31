@@ -1,0 +1,15 @@
+services:
+  bot:
+    build: .
+    image: fdg_warehouse_bot:latest
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+    command: python bot.py
+    volumes:
+      - .:/code
+      - botlogs:/var/www/bot/logs
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+  
+volumes:
+  botlogs:
